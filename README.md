@@ -1,0 +1,1 @@
+# poweroffice-go-openapi
