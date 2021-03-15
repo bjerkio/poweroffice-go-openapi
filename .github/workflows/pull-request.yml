@@ -1,0 +1,14 @@
+name: OpenAPI
+on:
+  pull_request:
+    
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: blake-mealey/openapi-review-action@v1
+        with:
+          spec-paths: poweroffice-go-openapi.yml
+          github-token: ${{ secrets.GITHUB_TOKEN }}
