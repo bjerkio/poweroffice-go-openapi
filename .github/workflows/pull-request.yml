@@ -7,7 +7,7 @@ jobs:
   review:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: blake-mealey/openapi-review-action@v1
         with:
           spec-paths: poweroffice-go-openapi.yml
